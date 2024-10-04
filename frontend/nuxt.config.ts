@@ -15,13 +15,12 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/robots', '@nuxt/image'],
 
   robots: {
-    UserAgent: '*',
-    Disallow: '',
+    disallow: '',
   },
 
   image: {
-    domains: ['new.shurik.market', 'shurik.market'],
-    alias: { back: 'https://new.shurik.market', old_back: 'https://shurik.market' },
+    domains: ['localhost'],
+    alias: { old_back: 'http://localhost:80' },
   },
 
   compatibilityDate: '2024-10-04',
